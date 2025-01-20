@@ -1,0 +1,85 @@
+body {
+    background-color: #82bb6e;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the Header */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;  /* Darker color for better contrast */
+    margin-top: 20px;
+}
+
+/* Styling the Link (Back) */
+a {
+    font-size: 20px;
+    color: black; /* Blue color for the link */
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;  /* Underline effect on hover */
+    
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    margin: 20px auto;
+    width: 80%; /* Limited width to improve readability */
+    text-align: justify;
+}
+
+/* Bold Text */
+bold {
+    font-weight: bold;
+}
+
+/* Styling the Image */
+img {
+    display: block;
+    max-width: 600px; /* Set a fixed max-width */
+    width: 100%;  /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 4px solid #fff;  /* Add a border for a more polished look */
+}
+
+
+/* Add a Container to Make Content Neater */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each section to make the content easy to scan */
+section {
+    margin-bottom: 30px;
+}
+
+/* Add some padding and margin to each section */
+section p {
+    margin-bottom: 10px;
+}
+
+/* Adding a Footer for additional neatness */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}

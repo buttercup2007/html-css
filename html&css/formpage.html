@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/jpg" href="formicon.jpg">
+    <title>formfiller</title>
+    <link rel="stylesheet" type="text/css" href="formpage.css">
+</head>
+
+<body>
+    <h1>Fruit questions</h1>
+    <h2>Please answer these questions about fruit</h2>
+    
+    <form action="submit_form.php" method="POST">
+        <fieldset>
+            <legend>What kind of fruits do you like?</legend>
+            <input id="sweet" type="checkbox" name="taste[]" value="sweet" checked> <label for="sweet">Sweet</label>
+            <input id="sour" type="checkbox" name="taste[]" value="sour" checked> <label for="sour">Sour</label>
+            <input id="bitter" type="checkbox" name="taste[]" value="bitter" checked> <label for="bitter">Bitter</label>
+            <input id="tart" type="checkbox" name="taste[]" value="tart" checked> <label for="tart">Tart</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your favorite type of fruit and why?</legend>
+            <label for="favorite-fruit">Favorite fruit: 
+                <input id="favorite-fruit" name="favorite-fruit" type="text" required />
+            </label><br>
+            <label for="reason">Reason: 
+                <input id="reason" name="reason" type="text" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>If you like fruit, why do you like fruit?</legend>
+            <label for="why-like-fruit">Type your answer: 
+                <input id="why-like-fruit" name="why-like-fruit" type="text" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you like apples and bananas?</legend>
+            <label><input id="yes" type="radio" name="like-fruits" value="yes" checked> yes</label>
+            <label><input id="no" type="radio" name="like-fruits" value="no"> no</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Does a mango look like an apple?</legend>
+            <label><input id="yes-mango" type="checkbox" name="mango-looks-like-apple" value="yes"> yes</label>
+            <label><input id="no-mango" type="checkbox" name="mango-looks-like-apple" value="no"> no</label>
+            <label><input id="crazy-yes" type="checkbox" name="mango-looks-like-apple" value="crazy-yes"> people who say yes are crazy</label>
+            <label><input id="crazy-no" type="checkbox" name="mango-looks-like-apple" value="crazy-no"> people who say no are crazy</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Did you like this form?</legend>
+            <label><input id="form-yes" type="radio" name="liked-form" value="yes" checked> yes</label>
+            <label><input id="form-no" type="radio" name="liked-form" value="no"> no</label>
+        </fieldset>
+
+        
+        <input type="submit" value="Submit" />
+    </form>
+
+    <div class="container">
+        <a href="http://127.0.0.1:5500/index.html" target="_blank">Back</a>
+    </div> 
+</body>
+<footer>author: Petra Nedeljkovic <br></footer>
+</html>

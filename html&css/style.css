@@ -1,0 +1,106 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text */
+    background-image: url('mixfruit.jpg');
+    background-color: #CC7E7E;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Main content section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%; /* Make sure content fills the width */
+}
+
+/* Header and Subheader styling */
+h1, h3 {
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Image container using grid layout for centering */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-items: center; 
+    align-items: center; 
+    margin-top: 60px;
+    width: 100%; 
+}
+
+/* Style for each image item */
+.image-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the images */
+img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 60px;
+    margin-top: -70px;
+    border-radius: 10px; /* Optional rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Styling for text under the images */
+.image-item h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Links container styling */
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the links horizontally */
+    gap: 20px; /* Add space between the links */
+    margin-top: 20px; /* Space above the links */
+    font-size: 12px; /* Make the links smaller */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Styling for each link in the links container */
+.links a {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+/* Footer alignments */
+footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0.5px; /* Reduced margin to keep footer closer to content */
+    padding: 20px 0; /* Add padding inside the footer */
+}
